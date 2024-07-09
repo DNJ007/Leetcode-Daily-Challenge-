@@ -1,5 +1,7 @@
 public class _7_9_24_Average_Waiting_Time
 {
+    //T.C : O(n)
+    //S.C : O(1)
     public static double averageWaitingTime(int[][] customers) 
     {       
         int currentTime = customers[0][0] + customers[0][1];
