@@ -22,6 +22,7 @@ public class _7_26_24_Find_the_City_With_the_Smallest_Number_of_Neighbors_at_a_T
     }
     public static void bellmanford(int n,int[][] edges,int[] result,int src)
     {
+        //T.C : O(V^4)
         Arrays.fill(result,Integer.MAX_VALUE);
         result[src] = 0;
 
