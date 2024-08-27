@@ -33,5 +33,12 @@ public class _8_14_24_Find_Kth_Smallest_Pair_Distance
         }
         return -1;
     }
+    public static void main(String[] args) 
+    {
+        int[] nums = {1,6,1};
+        int k = 3;
+        System.out.println(smallestDistancePair(nums, k));
+        
+    }
     
 }
