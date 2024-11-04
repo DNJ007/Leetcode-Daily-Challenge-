@@ -114,7 +114,28 @@ public class _11_4_24_String_Compression_III
         return comp;
         
     }
+    public static String compressedString2(String s) 
+    {
+        StringBuilder comp = new StringBuilder("");
+        StringBuilder s1 = new StringBuilder(s);
+        int i = 0;
+        while(i<s1.length())
+        {
+            int count = 0;
+            char ch = s1.charAt(i);
+
+            while(i<s1.length() && count < 9 && s1.charAt(i) == ch)
+            {
+                count++;
+                i++;
+            }
+            comp.append(count).append(ch);
+        }
+        
+        return comp.toString();
+    }
     public static void main(String[] args) {
         System.out.println(compressedString("mmmmmmmmmmmmmmmmmmzzzzzzzzzzzzzzzzzzyyyyyyyyyyyfvs"));
+        System.out.println(compressedString2("asdaaaaadmksdksmdkssssmsmsmms"));
     }
 }
