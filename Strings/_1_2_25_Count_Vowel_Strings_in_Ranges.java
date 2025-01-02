@@ -54,7 +54,12 @@ public class _1_2_25_Count_Vowel_Strings_in_Ranges
         String [] words = {"aba","bcb","ece","aa","e"};
         int[][] queries = {{0,2},{1,4},{1,1}};
 
-        System.out.println(vowelStrings(words, queries));
+        int[] res = vowelStrings(words, queries);
+
+        for(int i=0;i<res.length;i++)
+        {
+            System.out.print(res[i]+" ");
+        }
         
     }
     
