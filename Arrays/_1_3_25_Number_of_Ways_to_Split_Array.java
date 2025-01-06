@@ -1,4 +1,4 @@
-public class _1_3_24_Number_of_Ways_to_Split_Array
+public class _1_3_25_Number_of_Ways_to_Split_Array
 {
     public static int waysToSplitArray(int[] nums) 
     {
