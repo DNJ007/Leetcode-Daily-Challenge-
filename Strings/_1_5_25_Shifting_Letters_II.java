@@ -1,4 +1,4 @@
-public class _1_5_24_Shifting_Letters_II 
+public class _1_5_25_Shifting_Letters_II 
 {
     public static String shiftingLetters(String s, int[][] shifts) 
     {
