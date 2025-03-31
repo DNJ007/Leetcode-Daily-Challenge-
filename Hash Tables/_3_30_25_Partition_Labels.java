@@ -3,11 +3,11 @@ public class _3_30_25_Partition_Labels
 {
     public static List<Integer> partitionLabels(String s) 
     {
-        HashMap<Character,Integer> hm = new HashMap<>();
+        int[] lastIdx = new int[26];
         for(int i=0;i<s.length();i++)
         {
             char ch = s.charAt(i);
-            hm.put(ch,i);
+            lastIdx[ch-'a'] = i;
         }       
 
         int maxIdx = 0;
@@ -16,13 +16,13 @@ public class _3_30_25_Partition_Labels
         for(int i=0;i<s.length();)
         {   
             char ch = s.charAt(i);
-            maxIdx = hm.get(ch);  
+            maxIdx = lastIdx[ch-'a'];  
             int j=i;  
                    
             while(j<maxIdx)
             {
                 char ch2 = s.charAt(j);
-                int idx = hm.get(ch2);
+                int idx = lastIdx[ch2-'a'];
 
                 if(idx > maxIdx)
                 {
